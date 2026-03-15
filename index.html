@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,66 +10,80 @@
 
 <style>
 
-body{
+*{
 margin:0;
 padding:0;
-font-family:sans-serif;
-height:100vh;
-
-background:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") no-repeat center;
-background-size:cover;
-display:flex;
-justify-content:center;
-align-items:center;
+box-sizing:border-box;
+font-family:Arial;
 }
 
-.overlay{
-background:rgba(0,0,0,0.55);
-width:100%;
-height:100%;
+body{
+background:linear-gradient(180deg,#ff2e93,#ff6fb5);
+min-height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
 }
 
 .container{
+width:360px;
 text-align:center;
 color:white;
-width:320px;
 }
 
 .profile{
-width:120px;
-height:120px;
+width:110px;
+height:110px;
 border-radius:50%;
 border:4px solid white;
+margin:auto;
 margin-bottom:15px;
 }
 
-h2{
-margin-bottom:30px;
+h1{
+font-size:24px;
+margin-bottom:5px;
+}
+
+.bio{
+opacity:.9;
+margin-bottom:25px;
 }
 
 .link{
-display:block;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:12px;
+
 background:white;
-color:black;
-padding:14px;
+color:#ff2e93;
+
+padding:16px;
 margin:12px 0;
-border-radius:12px;
+
+border-radius:14px;
+
 text-decoration:none;
 font-size:18px;
 font-weight:bold;
-transition:0.3s;
-}
 
-.link i{
-margin-right:10px;
+transition:.25s;
 }
 
 .link:hover{
 transform:scale(1.05);
-background:#f0f0f0;
+background:#ffe1f0;
+}
+
+.icon{
+font-size:20px;
+}
+
+.footer{
+margin-top:25px;
+font-size:13px;
+opacity:.7;
 }
 
 </style>
@@ -77,30 +91,41 @@ background:#f0f0f0;
 
 <body>
 
-<div class="overlay">
-
 <div class="container">
 
 <img class="profile" src="https://i.pravatar.cc/300">
 
-<h2>@salysamy</h2>
+<h1>@salysamy</h1>
+
+<div class="bio">تابعني على جميع المنصات</div>
+
 
 <a class="link" href="https://facebook.com" target="_blank">
-<i class="fab fa-facebook"></i> Facebook
+<i class="fab fa-facebook icon"></i>
+Facebook
 </a>
+
 
 <a class="link" href="https://instagram.com" target="_blank">
-<i class="fab fa-instagram"></i> Instagram
+<i class="fab fa-instagram icon"></i>
+Instagram
 </a>
+
 
 <a class="link" href="https://tiktok.com" target="_blank">
-<i class="fab fa-tiktok"></i> TikTok
+<i class="fab fa-tiktok icon"></i>
+TikTok
 </a>
+
 
 <a class="link" href="https://t.me/" target="_blank">
-<i class="fab fa-telegram"></i> Telegram
+<i class="fab fa-telegram icon"></i>
+Telegram
 </a>
 
+
+<div class="footer">
+© 2026
 </div>
 
 </div>
