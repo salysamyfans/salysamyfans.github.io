@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ar">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>My Links</title>
+<title>Sally Samy</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -18,117 +20,180 @@ font-family:Arial;
 }
 
 body{
-background:linear-gradient(180deg,#ff2e93,#ff6fb5);
-min-height:100vh;
+
+background: linear-gradient(135deg,#ff2e93,#ff85c1,#ff2e93);
+
+background-size:400% 400%;
+animation:bgMove 10s infinite alternate;
+
+height:100vh;
+
 display:flex;
 justify-content:center;
 align-items:center;
+
+color:white;
+
+}
+
+@keyframes bgMove{
+0%{background-position:left}
+100%{background-position:right}
 }
 
 .container{
+
 width:360px;
 text-align:center;
-color:white;
+
+backdrop-filter: blur(10px);
+
 }
 
 .profile{
-width:110px;
-height:110px;
+
+width:120px;
+height:120px;
+
 border-radius:50%;
+
 border:4px solid white;
+
 margin:auto;
 margin-bottom:15px;
+
+object-fit:cover;
+
+box-shadow:0 0 20px rgba(255,255,255,.4);
+
 }
 
 h1{
-font-size:24px;
-margin-bottom:5px;
+
+margin-bottom:6px;
+
 }
 
 .bio{
+
 opacity:.9;
+
 margin-bottom:25px;
+
 }
 
 .link{
+
 display:flex;
+
 align-items:center;
 justify-content:center;
+
 gap:12px;
 
-background:white;
-color:#ff2e93;
+background: rgba(255,255,255,0.25);
+
+backdrop-filter: blur(12px);
 
 padding:16px;
+
 margin:12px 0;
 
 border-radius:14px;
 
+color:white;
+
 text-decoration:none;
+
 font-size:18px;
+
 font-weight:bold;
 
 transition:.25s;
+
+border:1px solid rgba(255,255,255,0.4);
+
 }
 
 .link:hover{
+
 transform:scale(1.05);
-background:#ffe1f0;
+
+background: rgba(255,255,255,0.35);
+
 }
 
 .icon{
+
 font-size:20px;
+
 }
 
 .footer{
+
 margin-top:25px;
+
 font-size:13px;
+
 opacity:.7;
+
 }
 
 </style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<img class="profile" src="https://i.pravatar.cc/300">
+<img class="profile" src="profile.jpg">
 
-<h1>@salysamy</h1>
+<h1>@sally.samy</h1>
 
-<div class="bio">تابعني على جميع المنصات</div>
+<div class="bio">Follow me on all platforms</div>
 
 
 <a class="link" href="https://www.facebook.com/meka.soly.9" target="_blank">
+
 <i class="fab fa-facebook icon"></i>
 Facebook
+
 </a>
 
 
 <a class="link" href="https://www.instagram.com/sally_samy38" target="_blank">
+
 <i class="fab fa-instagram icon"></i>
 Instagram
+
 </a>
 
 
 <a class="link" href="https://www.tiktok.com/@sally.samy25" target="_blank">
+
 <i class="fab fa-tiktok icon"></i>
 TikTok
+
 </a>
 
 
 <a class="link" href="https://t.me/salysamyfans" target="_blank">
+
 <i class="fab fa-telegram icon"></i>
 Telegram
+
 </a>
 
 
 <div class="footer">
-© 2026
+
+© Sally Samy
+
 </div>
 
 </div>
 
 </body>
+
 </html>
